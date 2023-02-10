@@ -1,0 +1,19 @@
+.outer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    gap: 1rem;
+}
+
+.input{
+    width: 28%;
+    padding: 2px;
+    border-radius: 0.4rem;
+}
+
+.marginAuto{
+    margin: auto;
+}
