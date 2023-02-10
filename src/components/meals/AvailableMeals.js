@@ -1,5 +1,5 @@
 import './availableMeals.css'
-
+import MealItem from './MealItem';
 const DUMMY_MEALS = [
     {
       id: "m1",
@@ -28,7 +28,7 @@ const DUMMY_MEALS = [
   ];
 const AvailableMeals = () => {
   
-      const mealsList = DUMMY_MEALS.map(meal=> <li>{meal.name}</li>)
+      const mealsList = DUMMY_MEALS.map(meal=> <li> <MealItem name={meal.name} description={meal.description} price = {meal.price}/> </li>)
 
       return <section className='meals'>
         <ul>{mealsList}</ul>
