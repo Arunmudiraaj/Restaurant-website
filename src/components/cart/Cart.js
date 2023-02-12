@@ -1,6 +1,7 @@
 import Button from "../UI/Button"
 import './cart.css'
 const Cart = props =>{
+   
     return <div>
         cart Items
         <div className="totals">
@@ -8,7 +9,7 @@ const Cart = props =>{
             <span style={{fontWeight: 'bolder'}}>12.56</span>
         </div>
         <div className="actions">
-            <button>Close</button>
+            <button onClick={()=>{props.closeCart()}}>Close</button>
             <Button name='Order'/>
         </div>
     </div>

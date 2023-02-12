@@ -3,14 +3,24 @@ import React from "react";
 import Meals from "./components/meals/Meals";
 import Modal from "./components/UI/Modal";
 import Cart from "./components/cart/Cart";
+import { useState } from "react";
 function App() {
+
+  const [displayCart, setDisplayCart] = useState(false)
+  const openCartHandler = ()=>{
+  
+    setDisplayCart(true)
+  }
+  const closeCartHandler = ()=>{
+    setDisplayCart(false)
+  }
   return (
     <React.Fragment>
       
-      <Header/>
+      <Header showCart={openCartHandler}/>
       <main>
         <Meals/>
-        <Modal> <Cart/> </Modal>
+        {displayCart && <Modal> <Cart closeCart= {closeCartHandler}/> </Modal>}
       </main>
       </React.Fragment>
   );
