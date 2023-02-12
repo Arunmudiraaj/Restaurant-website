@@ -5,7 +5,7 @@ const InputForm = ()=>{
         <div className='outer'>
             <div style={{display: 'flex', justifyContent: 'space-between'}}>
                 <span style={{fontWeight: 'bold'}}>Amount</span>
-                <input className='input' type={'number'}/>
+                <input className='input' type={'number'} defaultValue='1' min='1' max='5'/>
             </div>
             <Button className='marginAuto' name= '+ Add'/>
         </div>

@@ -1,0 +1,13 @@
+.totals{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+
+}
+
+.actions{
+    display: flex;
+    margin: 1em;
+    justify-content: flex-end;
+    gap: 2rem;
+}

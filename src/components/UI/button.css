@@ -4,4 +4,11 @@
     padding: 0.3rem 1rem;
     color: white;
     font-weight: bold;
+    
+}
+.btn:active {
+    box-shadow: 2px 2px 5px #8a2b06;
+}
+.btn:hover {
+    cursor: pointer;
 }
