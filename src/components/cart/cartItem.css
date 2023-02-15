@@ -1,0 +1,27 @@
+.cartItemContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.cartItemInfo{
+ display: flex;
+ flex-direction: column;
+ width: 35%;
+}
+
+.priceNamount{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.twoButtons{
+    display: flex;
+    gap: 10;
+    width: 15%;
+
+}
+.updateBtn{
+    margin: auto;
+    height: 50%;
+    padding: 0.1rem 1rem;
+}
